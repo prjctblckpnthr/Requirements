@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homepage"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Homepage" />
+        <item
+            android:id="@+id/newsfeed"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="News Feed" />
+        <item
+            android:id="@+id/calendar"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="Calender" />
+        <item
+            android:id="@+id/just_interact"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Just Interact" />
+
+
+            <item
+                android:id="@+id/privacy"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Privacy" />
+            <item
+                android:id="@+id/settings"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Settings" />
+            <item
+                android:id="@+id/logout"
+                android:title="Logout"
+                />
+    </group>
+</menu>

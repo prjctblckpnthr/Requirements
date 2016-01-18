@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.blackpanther.parent_teachermeeting">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <uses-permission android:name="android.permission.INTERNET" />
+
+        <activity
+            android:name=".Homepage"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".NewsFeed"
+            android:label="@string/title_activity_news_feed"
+            android:parentActivityName=".Homepage"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.blackpanther.parent_teachermeeting.Homepage" />
+        </activity>
+        <activity
+            android:name=".NEWS_expansion"
+            android:label="@string/title_activity_news_expansion"
+            android:parentActivityName=".NewsFeed"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.blackpanther.parent_teachermeeting.NewsFeed" />
+        </activity>
+        <activity
+            android:name=".Calendar_expansion"
+            android:label="@string/title_activity_calendar_expansion"
+            android:parentActivityName=".Calendar"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.blackpanther.parent_teachermeeting.Calendar" />
+        </activity>
+        <activity android:name=".Teacher_display"></activity>
+    </application>
+
+</manifest>
